@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Find Google Books</string>
+    <string name="books">Books</string>
+    <string name="query_hint">Введите название книги</string>
+    <string name="find_button_name">Поиск</string>
+    <string name="book_title1">Название книги, автор</string>
+    <string name="book_description">Описание</string>
+    <string name="url">https://www.googleapis.com/books/v1/volumes?q=</string>
+</resources>
