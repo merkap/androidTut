@@ -1,4 +1,4 @@
-package com.example.book;
+package com.example.book.dataModel;
 
 public class BookModel {
     private String label;

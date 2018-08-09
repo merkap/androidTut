@@ -1,4 +1,4 @@
-package com.example.book;
+package com.example.book.net;
 
 
 import java.io.BufferedReader;

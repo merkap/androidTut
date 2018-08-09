@@ -1,4 +1,4 @@
-package com.example.book;
+package com.example.book.dataModel;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import com.example.book.R;
 
 import java.util.List;
 
@@ -37,13 +39,13 @@ public class BookModelAdapter extends BaseAdapter {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         View view = convertView;
-        if (view == null) view = layoutInflater.inflate(R.layout.book_item, parent,false);
+        if (view == null) view = layoutInflater.inflate(R.layout.book_item, parent, false);
 
         BookModel bookModel = getBookModel(position);
 
-        TextView bookTitle = (TextView) view.findViewById(R.id.book_title);
+        TextView bookTitle = view.findViewById(R.id.book_title);
         bookTitle.setText(bookModel.getTitle());
-        TextView bookDesc = (TextView) view.findViewById(R.id.book_description);
+        TextView bookDesc = view.findViewById(R.id.book_description);
         bookDesc.setText(bookModel.getDescription());
         return view;
     }
